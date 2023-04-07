@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import React from "react";
 import {ColorButton, GlobalStyle, H1, H2, H3, Paragraph, WhiteButton} from "@/style/global";
+import MainLayout from "@/layouts/MainLayout";
+import Hero from "@/components/home/Hero";
 
 export default function Home() {
     return (
@@ -15,13 +17,9 @@ export default function Home() {
                       rel="stylesheet"/>
             </Head>
             <GlobalStyle/>
-            <main>
-                <div>
-                    <div>
-                        Hello TS!
-                    </div>
-                </div>
-            </main>
+            <MainLayout>
+                <Hero/>
+            </MainLayout>
         </>
     )
 }

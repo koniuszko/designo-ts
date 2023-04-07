@@ -1,6 +1,6 @@
-import styled, {createGlobalStyle, DefaultTheme, GlobalStyleComponent, StyledComponent} from "styled-components";
+import styled, {createGlobalStyle} from "styled-components";
 
-export const GlobalStyle: GlobalStyleComponent<{}, DefaultTheme> = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
@@ -14,16 +14,25 @@ export const GlobalStyle: GlobalStyleComponent<{}, DefaultTheme> = createGlobalS
   }
 `
 
-export const H1 = styled.h1`
-  font-size: 48px;
-  line-height: 48px;
+const H1 = styled.h1`
+  font-size: 32px;
+  line-height: 36px;
   font-weight: 500;
+  text-align: center;
+  @media (min-width: 768px) {
+    font-size: 48px;
+    line-height: 48px;
+  }
+`
+export const WhiteH1 = styled(H1)`
+  color: #FFF;
 `
 export const H2 = styled.h2`
   font-size: 40px;
   line-height: 48px;
   font-weight: 500;
   letter-spacing: 2px;
+  text-align: center;
 `
 
 export const H3 = styled.h3`
@@ -31,12 +40,18 @@ export const H3 = styled.h3`
   line-height: 26px;
   font-weight: 500;
   letter-spacing: 5px;
+  text-align: center;
 `
 
 export const Paragraph = styled.p`
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
+  text-align: center;
+`
+
+export const WhiteParagraph = styled(Paragraph)`
+  color: #FFF;
 `
 
 const Button = styled.button`

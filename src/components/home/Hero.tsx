@@ -5,6 +5,9 @@ import Link from "next/link";
 
 export const HeroSection = styled.section`
   background-color: #E7816B;
+  background-image: url('/assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg');
+  background-size: 600%;
+  background-position: -40% 0;
   width: 100%;
   height: 845px;
   overflow: hidden;

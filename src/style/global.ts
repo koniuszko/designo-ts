@@ -29,11 +29,20 @@ export const WhiteH1 = styled(H1)`
   color: #FFF;
 `
 export const H2 = styled.h2`
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 28px;
+  line-height: 36px;
   font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: 1.4px;
   text-align: center;
+  @media (min-width: 768px) {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 2px;
+  }
+`
+
+export const WhiteH2 = styled(H2)`
+  color: #FFF
 `
 
 export const H3 = styled.h3`

@@ -3,6 +3,7 @@ import React from "react";
 import {GlobalStyle} from "@/style/global";
 import MainLayout from "@/layouts/MainLayout";
 import Hero from "@/components/home/Hero";
+import SectionNav from "@/components/SectionNav";
 
 export default function Home() {
     return (
@@ -18,7 +19,10 @@ export default function Home() {
             </Head>
             <GlobalStyle/>
             <MainLayout>
-                <Hero/>
+                <>
+                    <Hero/>
+                    <SectionNav/>
+                </>
             </MainLayout>
         </>
     )

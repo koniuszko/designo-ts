@@ -55,6 +55,10 @@ export const WhiteParagraph = styled(Paragraph)`
   color: #FFF;
 `
 
+export const GrayParagraph = styled(Paragraph)`
+  color: #333136;
+`
+
 const Button = styled.button`
   width: 152px;
   height: 56px;

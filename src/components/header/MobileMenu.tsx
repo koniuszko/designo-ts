@@ -7,10 +7,6 @@ import {useEffect, useState} from "react";
 import Link from "next/link";
 import {NavLink} from "@/style/global";
 
-export const NavWrapper = styled.nav`
-
-`
-
 export const ModalWrapper = styled.div`
   position: absolute;
   z-index: 99;
@@ -18,8 +14,7 @@ export const ModalWrapper = styled.div`
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(29, 28, 30, 0.61);
-
+  background-color: rgba(29, 28, 30, 0.6);
 
   .nav-list {
     height: 235px;
@@ -33,8 +28,7 @@ export const ModalWrapper = styled.div`
 
 `
 
-
-const MenuModal = () => {
+export const MenuModal = () => {
     return (
         <ModalWrapper>
             <ul className="nav-list">
@@ -55,23 +49,24 @@ const MenuModal = () => {
 const MobileMenu = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    useEffect(() => {
-        return () => {
-            if (!isMenuOpen) {
-                document.body.style.overflow = 'hidden'
-            } else {
-                document.body.style.overflow = 'initial'
-            }
-        };
-    }, [isMenuOpen]);
+    // useEffect(() => {
+    //     return () => {
+    //         if (!isMenuOpen) {
+    //             document.body.style.overflow = 'hidden'
+    //         }
+    //         if (isMenuOpen) {
+    //             document.body.style.overflow = 'initial'
+    //         }
+    //     };
+    // }, [isMenuOpen]);
 
     return (
-        <NavWrapper>
+        <nav>
             <div onClick={() => setIsMenuOpen(!isMenuOpen)} className="menu-icon">
                 {!isMenuOpen ? <UilBars size={27}/> : <UilTimes size={27}/>}
             </div>
             {isMenuOpen && <MenuModal/>}
-        </NavWrapper>
+        </nav>
     )
 }
 

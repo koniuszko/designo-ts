@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import React from "react";
-import {ColorButton, GlobalStyle, H1, H2, H3, Paragraph, WhiteButton} from "@/style/global";
+import {GlobalStyle} from "@/style/global";
 import MainLayout from "@/layouts/MainLayout";
 import Hero from "@/components/home/Hero";
 

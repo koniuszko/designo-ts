@@ -1,10 +1,13 @@
 import styled from 'styled-components'
 import Image from "next/image";
 import MobileMenu from "@/components/header/MobileMenu";
+import {ColorButton} from "@/style/global";
 
 export const HeaderWrapper = styled.header`
   padding: 34px 24px;
   display: flex;
+
+
   justify-content: space-between;
   align-items: center;
 

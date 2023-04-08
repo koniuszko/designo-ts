@@ -1,4 +1,5 @@
 import styled, {createGlobalStyle} from "styled-components";
+import Link from "next/link";
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -81,4 +82,11 @@ export const ColorButton = styled(Button)`
   background-color: #e7816b;
   color: #fff;
 `
-
+export const NavLink = styled(Link)`
+  text-decoration: none;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 2px;
+`

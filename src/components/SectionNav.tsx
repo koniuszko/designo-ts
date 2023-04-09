@@ -55,7 +55,6 @@ const SectionNav = () => {
                         <Image className="arrow-icon" src='/assets/icons/icon-right-arrow.svg' alt='arrow-icon'
                                width={4} height={8}/>
                     </WhiteParagraph>
-
                 </div>
             </NavLink>
             <NavLink href='/app-design'>
@@ -68,7 +67,6 @@ const SectionNav = () => {
                         <Image className="arrow-icon" src='/assets/icons/icon-right-arrow.svg' alt='arrow-icon'
                                width={4} height={8}/>
                     </WhiteParagraph>
-
                 </div>
             </NavLink>
             <NavLink href='/graphic-design'>
@@ -81,7 +79,6 @@ const SectionNav = () => {
                         <Image className="arrow-icon" src='/assets/icons/icon-right-arrow.svg' alt='arrow-icon'
                                width={4} height={8}/>
                     </WhiteParagraph>
-
                 </div>
             </NavLink>
         </NavWrapper>

@@ -53,6 +53,10 @@ export const H3 = styled.h3`
   text-align: center;
 `
 
+export const GrayH3 = styled(H3)`
+  color: #333136;
+`
+
 export const Paragraph = styled.p`
   font-size: 16px;
   line-height: 26px;

@@ -4,6 +4,7 @@ import {GlobalStyle} from "@/style/global";
 import MainLayout from "@/layouts/MainLayout";
 import Hero from "@/components/home/Hero";
 import SectionNav from "@/components/SectionNav";
+import MainSection from "@/components/home/MainSection";
 
 export default function Home() {
     return (
@@ -22,6 +23,7 @@ export default function Home() {
                 <>
                     <Hero/>
                     <SectionNav/>
+                    <MainSection/>
                 </>
             </MainLayout>
         </>

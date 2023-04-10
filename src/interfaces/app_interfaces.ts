@@ -7,3 +7,7 @@ export interface CardProps {
     description: string,
     img: string
 }
+
+export interface CardsProps {
+    home_cards?: CardProps[]
+}

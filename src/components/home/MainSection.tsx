@@ -1,8 +1,7 @@
 import styled from 'styled-components'
-import {GrayH3, GrayParagraph, WhiteButton, WhiteH1, WhiteParagraph} from "@/style/global";
+import {GrayH3, GrayParagraph} from "@/style/global";
 import Image from "next/image";
-import Link from "next/link";
-import {CardProps} from "@/interfaces/app_interfaces";
+import {CardProps, CardsProps} from "@/interfaces/app_interfaces";
 
 export const MainWrapper = styled.main`
   margin-bottom: 310px;
@@ -30,24 +29,6 @@ export const CardWrapper = styled.div`
   }
 `
 
-const data = [
-    {
-        title: "PASSIONATE",
-        description: "Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge art, design, and technology into exciting new solutions.",
-        img: "/assets/home/desktop/illustration-passionate.svg"
-    },
-    {
-        title: "RESOURCEFUL",
-        description: "Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer collaboration. It guarantees superior results that fulfill our clients’ needs.",
-        img: "/assets/home/desktop/illustration-resourceful.svg"
-    },
-    {
-        title: "FRIENDLY",
-        description: " We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide.",
-        img: "/assets/home/desktop/illustration-friendly.svg"
-    }
-]
-
 const Card = ({title, description, img}: CardProps) => {
     return <CardWrapper>
         <Image className="card-image" src={img} alt={`${title}-icon`} width={202} height={202}/>
@@ -56,11 +37,12 @@ const Card = ({title, description, img}: CardProps) => {
     </CardWrapper>
 }
 
-const MainSection = () => {
+const MainSection = ({home_cards}: CardsProps) => {
     return (
         <MainWrapper>
-            {data.map(item => <Card key={item.title} {...item}/>)}
+            {home_cards?.map((card: CardProps) => <Card key={card.title} {...card}/>)}
         </MainWrapper>
     )
 }
 export default MainSection;
+

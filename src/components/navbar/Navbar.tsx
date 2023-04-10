@@ -1,9 +1,8 @@
 import styled from 'styled-components'
 import Image from "next/image";
-import MobileMenu from "@/components/header/MobileMenu";
-import {ColorButton} from "@/style/global";
+import MobileMenu from "@/components/navbar/MobileMenu";
 
-export const HeaderWrapper = styled.header`
+export const HeaderWrapper = styled.nav`
   padding: 34px 24px;
   display: flex;
 
@@ -12,7 +11,7 @@ export const HeaderWrapper = styled.header`
   align-items: center;
 
 `
-const Header = () => {
+const Navbar = () => {
     return (
         <HeaderWrapper>
             <Image src={'/assets/shared/desktop/logo-dark.png'} alt={'logo'} width={202} height={27}/>
@@ -21,4 +20,4 @@ const Header = () => {
     )
 }
 
-export default Header;
+export default Navbar;

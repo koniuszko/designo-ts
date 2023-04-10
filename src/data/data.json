@@ -51,5 +51,57 @@
         "imgUrl": "/assets/web-design/desktop/image-camp.jpg"
       }
     ]
+  },
+  "apps": {
+    "pageTitle": "App Design",
+    "pageDescription": "Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.",
+    "designs": [
+      {
+        "title": "AIRFILTER",
+        "description": "Solving the problem of poor indoor air quality by filtering the air",
+        "imgUrl": "/assets/app-design/desktop/image-airfilter.jpg"
+      },
+      {
+        "title": "EYECAM",
+        "description": "Product that lets you edit your favorite photos and videos at any time",
+        "imgUrl": "/assets/app-design/desktop/image-eyecam.jpg"
+      },
+      {
+        "title": "FACEIT",
+        "description": "Get to meet your favorite internet superstar with the faceit app",
+        "imgUrl": "/assets/app-design/desktop/image-faceit.jpg"
+      },
+      {
+        "title": "TODO",
+        "description": "A todo app that features cloud sync with light and dark mode",
+        "imgUrl": "/assets/app-design/desktop/image-todo.jpg"
+      },
+      {
+        "title": "LOOPSTUDIOS",
+        "description": "A VR experience app made for Loopstudios",
+        "imgUrl": "/assets/app-design/desktop/image-loopstudios.jpg"
+      }
+    ]
+  },
+  "graphics": {
+    "pageTitle": "Graphic Design",
+    "pageDescription": "We deliver eye-catching branding materials that are tailored to meet your business objectives.",
+    "designs": [
+      {
+        "title": "TIM BROWN",
+        "description": "A book cover designed for Tim Brown’s new release, ‘Change’",
+        "imgUrl": "/assets/graphic-design/desktop/image-change.jpg"
+      },
+      {
+        "title": "BOXED WATER",
+        "description": "A simple packaging concept made for Boxed Water",
+        "imgUrl": "/assets/graphic-design/desktop/image-boxed-water.jpg"
+      },
+      {
+        "title": "SCIENCE!",
+        "description": "A poster made in collaboration with the Federal Art Project",
+        "imgUrl": "/assets/graphic-design/desktop/image-science.jpg"
+      }
+    ]
   }
 }

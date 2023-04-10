@@ -3,6 +3,8 @@ import {ReactNode} from "react";
 export interface DataI {
     home_cards?: {},
     webs?: {},
+    apps?: {},
+    graphics?: {},
 }
 
 export interface LayoutProps {

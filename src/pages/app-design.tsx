@@ -44,7 +44,7 @@ const data = {
 }
 
 
-export default function WebDesign({designData}: DesignPageProps) {
+export default function AppDesign({designData}: DesignPageProps) {
     return (
         <MainLayout>
             <DesignHeader pageTitle={designData?.pageTitle}
@@ -58,6 +58,6 @@ export default function WebDesign({designData}: DesignPageProps) {
 export const getStaticProps: GetStaticProps = async (context) => {
     const data: DataI = await import('@/data/data.json')
     return {
-        props: {designData: data.webs},
+        props: {designData: data.apps},
     }
 }

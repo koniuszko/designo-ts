@@ -4,7 +4,7 @@ import {UilBars} from '@iconscout/react-unicons'
 // @ts-ignore
 import {UilTimes} from '@iconscout/react-unicons'
 import {useEffect, useState} from "react";
-import Link from "next/link";
+
 import {NavLink} from "@/style/global";
 
 export const ModalWrapper = styled.div`
@@ -61,12 +61,12 @@ const MobileMenu = () => {
     // }, [isMenuOpen]);
 
     return (
-        <nav>
+        <div>
             <div onClick={() => setIsMenuOpen(!isMenuOpen)} className="menu-icon">
                 {!isMenuOpen ? <UilBars size={27}/> : <UilTimes size={27}/>}
             </div>
             {isMenuOpen && <MenuModal/>}
-        </nav>
+        </div>
     )
 }
 

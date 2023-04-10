@@ -4,6 +4,7 @@ import {GrayParagraph, NavLink, WhiteButton, WhiteH1, WhiteParagraph} from "@/st
 import Link from "next/link";
 
 export const FooterWrapper = styled.footer`
+  margin-top: 250px;
   background-color: #1d1c1e;
   height: 815px;
   display: flex;

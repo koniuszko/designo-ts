@@ -1,5 +1,12 @@
+import {ReactNode} from "react";
+
+export interface DataI {
+    home_cards?: {},
+    webs?: {},
+}
+
 export interface LayoutProps {
-    children: JSX.Element
+    children: ReactNode
 }
 
 export interface CardProps {
@@ -9,5 +16,24 @@ export interface CardProps {
 }
 
 export interface CardsProps {
-    home_cards?: CardProps[]
+    home_cards: CardProps[]
+}
+
+export interface DesignHeaderProps {
+    pageTitle: string,
+    pageDescription: string,
+}
+
+export interface DesignCardProps {
+    title: string,
+    description: string,
+    imgUrl: string
+}
+
+export interface DesignPageProps {
+    designData: {
+        pageTitle: string,
+        pageDescription: string,
+        designs: DesignCardProps[]
+    }
 }

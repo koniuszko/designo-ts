@@ -4,7 +4,6 @@ import Image from "next/image";
 import {CardProps, CardsProps} from "@/interfaces/app_interfaces";
 
 export const MainWrapper = styled.main`
-  margin-bottom: 310px;
   display: flex;
   flex-direction: column;
   align-items: center;

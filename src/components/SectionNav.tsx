@@ -3,7 +3,7 @@ import {NavLink, WhiteH2, WhiteParagraph} from "@/style/global";
 import Image from "next/image";
 
 const NavWrapper = styled.nav`
-  padding: 120px 0;
+  margin: 96px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,7 +18,6 @@ const NavWrapper = styled.nav`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
 
   .web-design {

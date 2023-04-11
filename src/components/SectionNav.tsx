@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {NavLink, WhiteH2, WhiteParagraph} from "@/style/global";
 import Image from "next/image";
+import {NavProps} from "@/interfaces/app_interfaces";
 
 const NavWrapper = styled.nav`
   margin: 96px 0;
@@ -40,11 +41,10 @@ const NavWrapper = styled.nav`
   }
 `
 
-
-const SectionNav = () => {
+const SectionNav = ({disabledLink}: NavProps) => {
     return (
         <NavWrapper>
-            <NavLink href='/web-design'>
+            {disabledLink !== "web" && <NavLink href='/web-design'>
                 <div className='link-container web-design'>
                     <WhiteH2>
                         WEB DESIGN
@@ -55,8 +55,8 @@ const SectionNav = () => {
                                width={4} height={8}/>
                     </WhiteParagraph>
                 </div>
-            </NavLink>
-            <NavLink href='/app-design'>
+            </NavLink>}
+            {disabledLink !== "app" && <NavLink href='/app-design'>
                 <div className='link-container app-design'>
                     <WhiteH2>
                         APP DESIGN
@@ -67,8 +67,8 @@ const SectionNav = () => {
                                width={4} height={8}/>
                     </WhiteParagraph>
                 </div>
-            </NavLink>
-            <NavLink href='/graphic-design'>
+            </NavLink>}
+            {disabledLink !== "graphic" && <NavLink href='/graphic-design'>
                 <div className='link-container graphic-design'>
                     <WhiteH2>
                         GRAPHIC DESIGN
@@ -79,7 +79,7 @@ const SectionNav = () => {
                                width={4} height={8}/>
                     </WhiteParagraph>
                 </div>
-            </NavLink>
+            </NavLink>}
         </NavWrapper>
     )
 }

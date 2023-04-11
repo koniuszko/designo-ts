@@ -1,10 +1,15 @@
 import {ReactNode} from "react";
+import {string} from "prop-types";
 
 export interface DataI {
     home_cards?: {},
     webs?: {},
     apps?: {},
     graphics?: {},
+}
+
+export interface NavProps {
+    disabledLink: string
 }
 
 export interface LayoutProps {

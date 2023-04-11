@@ -9,7 +9,7 @@ export default function Home({home_cards}: CardsProps) {
     return (
         <MainLayout>
             <Hero/>
-            <SectionNav/>
+            <SectionNav disabled={""}/>
             <MainSection home_cards={home_cards}/>
         </MainLayout>
     )

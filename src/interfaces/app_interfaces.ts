@@ -44,3 +44,8 @@ export interface DesignPageProps {
         designs: DesignCardProps[]
     }
 }
+
+export interface LocationsCard {
+    country: string,
+    img: string
+}

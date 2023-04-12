@@ -45,6 +45,10 @@ export const WhiteH2 = styled(H2)`
   color: #FFF
 `
 
+export const ColorH2 = styled(H2)`
+  color: #E7816B;
+`
+
 export const H3 = styled.h3`
   font-size: 20px;
   line-height: 26px;

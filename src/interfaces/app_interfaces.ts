@@ -49,3 +49,12 @@ export interface LocationsCard {
     country: string,
     img: string
 }
+
+export interface LocationsComponentProps {
+    country: string,
+    officeName: string,
+    street: string,
+    city: string,
+    phone: string,
+    email: string
+}

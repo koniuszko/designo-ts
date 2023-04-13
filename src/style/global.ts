@@ -76,7 +76,11 @@ export const WhiteParagraph = styled(Paragraph)`
   color: #FFF;
 `
 
-export const GrayParagraph = styled(Paragraph)`
+export const LightGrayParagraph = styled(Paragraph)`
+  color: #8E8D8E;
+`
+
+export const DarkGrayParagraph = styled(Paragraph)`
   color: #333136;
 `
 

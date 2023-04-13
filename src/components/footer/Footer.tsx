@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Image from "next/image";
-import {GrayParagraph, NavLink, WhiteButton, WhiteH1, WhiteParagraph} from "@/style/global";
+import {LightGrayParagraph, NavLink, WhiteButton, WhiteH1, WhiteParagraph} from "@/style/global";
 import Link from "next/link";
 
 export const FooterWrapper = styled.footer`
@@ -107,14 +107,14 @@ const Footer = () => {
                     </ul>
                 </nav>
                 <div className="address-container">
-                    <GrayParagraph className="text-bold">Designo Central Office</GrayParagraph>
-                    <GrayParagraph>3886 Wellington Street</GrayParagraph>
-                    <GrayParagraph>Toronto, Ontario M9C 3J5</GrayParagraph>
+                    <LightGrayParagraph className="text-bold">Designo Central Office</LightGrayParagraph>
+                    <LightGrayParagraph>3886 Wellington Street</LightGrayParagraph>
+                    <LightGrayParagraph>Toronto, Ontario M9C 3J5</LightGrayParagraph>
                 </div>
                 <div className="address-container">
-                    <GrayParagraph className="text-bold">Contact Us (Central Office)</GrayParagraph>
-                    <GrayParagraph>P: +1 253-863-8967</GrayParagraph>
-                    <GrayParagraph>M: contact@designo.co</GrayParagraph>
+                    <LightGrayParagraph className="text-bold">Contact Us (Central Office)</LightGrayParagraph>
+                    <LightGrayParagraph>P: +1 253-863-8967</LightGrayParagraph>
+                    <LightGrayParagraph>M: contact@designo.co</LightGrayParagraph>
                 </div>
             </div>
             <div className="socials">

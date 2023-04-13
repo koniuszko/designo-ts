@@ -9,7 +9,7 @@ import {NavLink} from "@/style/global";
 
 export const ModalWrapper = styled.div`
   position: absolute;
-  z-index: 99;
+  z-index: 9999;
   top: 100px;
   left: 0;
   width: 100%;

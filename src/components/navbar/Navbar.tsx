@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import Image from "next/image";
 import MobileMenu from "@/components/navbar/MobileMenu";
+import Link from "next/link";
 
 export const NavbarWrapper = styled.nav`
   padding: 34px 24px;
@@ -11,7 +12,9 @@ export const NavbarWrapper = styled.nav`
 const Navbar = () => {
     return (
         <NavbarWrapper>
-            <Image src={'/assets/shared/desktop/logo-dark.png'} alt={'logo'} width={202} height={27}/>
+            <Link href={'/'}>
+                <Image src={'/assets/shared/desktop/logo-dark.png'} alt={'logo'} width={202} height={27}/>
+            </Link>
             <MobileMenu/>
         </NavbarWrapper>
     )

@@ -1,10 +1,12 @@
 import styled from "styled-components";
 import {WhiteButton, WhiteH2, WhiteParagraph} from "@/style/global";
-import {ErrorMessage, Field, Form, Formik, FormikHelpers} from "formik";
+import {ErrorMessage, Field, Form, Formik, FormikHelpers, FormikState} from "formik";
 import {FormValues, Msg} from "@/interfaces/app_interfaces";
 import * as Yup from 'yup'
 import Image from "next/image";
 import errorIcon from '../../../public/assets/contact/desktop/icon-error.svg'
+import emailjs from '@emailjs/browser';
+
 
 const FormSection = styled.section`
   height: 764px;
@@ -75,9 +77,10 @@ const ErrorMsg = styled.p`
 
 
 `
+
 const emailRegex = new RegExp(/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g)
 
-
+// template_ib98zgl
 const Error = ({msg}: Msg) => {
     return (
         <ErrorMsg className="error-message">
@@ -114,12 +117,27 @@ export default function ContactForm() {
                     })}
                     onSubmit={(
                         values: FormValues,
-                        {setSubmitting}: FormikHelpers<FormValues>
+                        {setSubmitting, resetForm}: FormikHelpers<FormValues>,
                     ) => {
-                        setTimeout(() => {
-                            alert(JSON.stringify(values, null, 2));
-                            setSubmitting(false);
-                        }, 500);
+                        emailjs.send("service_rvt4e2k", "template_ib98zgl",
+                            {
+                                form_name: values.name,
+                                to_name: 'MK',
+                                form_email: values.email,
+                                form_phone: values.phone,
+                                to_email: 'koniuszaniec.mateusz@yahoo.com',
+                                message: values.message,
+                            }, "3rLpdaQ3SBE0gf7uc"
+                        ).then(() => {
+                                setSubmitting(false);
+                                alert('Thank you. I will get back to you as soon as possible.');
+                                resetForm()
+                            }, (error) => {
+                                setSubmitting(false);
+                                console.log(error)
+                                alert('Something went wrong.')
+                            }
+                        )
                     }}>
                 <Form className="contact-form">
                     <div className="contact-form-wrapper">

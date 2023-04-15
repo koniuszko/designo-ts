@@ -66,7 +66,7 @@ const LocationLinkCard = ({country, img}: LocationsCard) => {
 const LocationNav = () => {
     return (
         <NavWrapper>
-            {locations.map(card => <LocationLinkCard {...card}/>)}
+            {locations.map(card => <LocationLinkCard key={card.country} {...card}/>)}
         </NavWrapper>
     )
 }

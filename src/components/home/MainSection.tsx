@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {GrayH3, GrayParagraph} from "@/style/global";
+import {DarkGrayParagraph, GrayH3} from "@/style/global";
 import Image from "next/image";
 import {CardProps, CardsProps} from "@/interfaces/app_interfaces";
 
@@ -32,7 +32,7 @@ const Card = ({title, description, img}: CardProps) => {
     return <CardWrapper>
         <Image className="card-image" src={img} alt={`${title}-icon`} width={202} height={202}/>
         <GrayH3 className="card-title">{title}</GrayH3>
-        <GrayParagraph className="card-description">{description}</GrayParagraph>
+        <DarkGrayParagraph className="card-description">{description}</DarkGrayParagraph>
     </CardWrapper>
 }
 

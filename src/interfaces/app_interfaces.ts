@@ -58,3 +58,14 @@ export interface LocationsComponentProps {
     phone: string,
     email: string
 }
+
+export interface FormValues {
+    name: string,
+    email: string,
+    phone: string,
+    message: string
+}
+
+export interface Msg {
+    msg: string
+}

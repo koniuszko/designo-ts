@@ -39,6 +39,35 @@ const NavWrapper = styled.nav`
   .arrow-icon {
     margin-left: 16px;
   }
+
+  .wide-text {
+    letter-spacing: 5px;
+  }
+
+  @media (min-width: 768px) {
+    margin: 120px auto;
+
+    .link-container {
+      width: 689px;
+      height: 200px;
+      gap: 24px;
+    }
+
+    .web-design {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.45)), url('/assets/home/tablet/image-web-design.jpg');
+    }
+
+    .app-design {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.45)), url('/assets/home/tablet/image-app-design.jpg');
+    }
+
+    .graphic-design {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.45)), url('/assets/home/tablet/image-graphic-design.jpg');
+    }
+  }
 `
 
 const SectionNav = ({disabledLink}: NavProps) => {
@@ -49,10 +78,10 @@ const SectionNav = ({disabledLink}: NavProps) => {
                     <WhiteH2>
                         WEB DESIGN
                     </WhiteH2>
-                    <WhiteParagraph>
+                    <WhiteParagraph className="wide-text">
                         VIEW PROJECTS
                         <Image className="arrow-icon" src='/assets/icons/icon-right-arrow.svg' alt='arrow-icon'
-                               width={4} height={8}/>
+                               width={6} height={12}/>
                     </WhiteParagraph>
                 </div>
             </NavLink>}
@@ -61,10 +90,10 @@ const SectionNav = ({disabledLink}: NavProps) => {
                     <WhiteH2>
                         APP DESIGN
                     </WhiteH2>
-                    <WhiteParagraph>
+                    <WhiteParagraph className="wide-text">
                         VIEW PROJECTS
                         <Image className="arrow-icon" src='/assets/icons/icon-right-arrow.svg' alt='arrow-icon'
-                               width={4} height={8}/>
+                               width={6} height={12}/>
                     </WhiteParagraph>
                 </div>
             </NavLink>}
@@ -73,10 +102,10 @@ const SectionNav = ({disabledLink}: NavProps) => {
                     <WhiteH2>
                         GRAPHIC DESIGN
                     </WhiteH2>
-                    <WhiteParagraph>
+                    <WhiteParagraph className="wide-text">
                         VIEW PROJECTS
                         <Image className="arrow-icon" src='/assets/icons/icon-right-arrow.svg' alt='arrow-icon'
-                               width={4} height={8}/>
+                               width={6} height={12}/>
                     </WhiteParagraph>
                 </div>
             </NavLink>}

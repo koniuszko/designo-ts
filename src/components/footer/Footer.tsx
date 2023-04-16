@@ -16,6 +16,9 @@ export const FooterWrapper = styled.footer`
     margin-top: 250px;
   }
 
+  @media (min-width: 768px) {
+    margin-top: 330px;
+  }
 `
 
 const Footer = () => {

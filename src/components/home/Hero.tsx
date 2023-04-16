@@ -31,6 +31,19 @@ export const HeroSection = styled.section`
     bottom: 0;
     transform: translate(-50%, 40%);
   }
+
+  @media (min-width: 768px) {
+    background-size: 300%;
+    background-position: -60% 0;
+    width: 689px;
+    padding: 60px 56px 0;
+    margin: 0 auto;
+    border-radius: 15px;
+
+    .hero-description {
+      margin: 24px 80px;
+    }
+  }
 `
 
 const Hero = () => {

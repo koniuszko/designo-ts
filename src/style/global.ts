@@ -119,3 +119,13 @@ export const NavLink = styled(Link)`
   line-height: 25px;
   letter-spacing: 2px;
 `
+
+export const DesktopNavLink = styled(Link)`
+  text-decoration: none;
+  color: #333136;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 2px;
+`
+

@@ -28,14 +28,15 @@ export const ContactWrapper = styled.div`
     background-position: 90px 50%;
     transform: translateY(-264px);
     gap: 24px;
-  }
 
-  .footer-contact-title {
-    margin: 0 178px;
-  }
 
-  .footer-contact-description {
-    margin: 0 100px;
+    .footer-contact-title {
+      margin: 0 178px;
+    }
+
+    .footer-contact-description {
+      margin: 0 100px;
+    }
   }
 `
 

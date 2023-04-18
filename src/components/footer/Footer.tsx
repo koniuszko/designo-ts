@@ -18,6 +18,12 @@ export const FooterWrapper = styled.footer`
 
   @media (min-width: 768px) {
     margin-top: 330px;
+    height: initial;
+    padding-bottom: 80px;
+
+    .footer-logo {
+      margin-top: 0;
+    }
   }
 `
 
@@ -26,7 +32,6 @@ const Footer = () => {
         <FooterWrapper>
             <FooterContact/>
             <FooterContainer/>
-            <FooterSocials/>
         </FooterWrapper>
     )
 }

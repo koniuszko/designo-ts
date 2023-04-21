@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Image from "next/image";
-import {ColorH3, GrayParagraph} from "@/style/global";
+import {ColorH3, DarkGrayParagraph} from "@/style/global";
 import {DesignPageProps, DesignCardProps} from "@/interfaces/app_interfaces";
 
 const SectionWrapper = styled.section`
@@ -9,6 +9,9 @@ const SectionWrapper = styled.section`
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  @media (min-width: 768px) {
+    padding: 0 40px;
+  }
 `
 
 const CardWrapper = styled.div`
@@ -28,6 +31,13 @@ const CardWrapper = styled.div`
   .card-description {
     padding: 0 24px;
   }
+
+  @media (min-width: 768px) {
+    width: 689px;
+    height: 310px;
+    flex-direction: row;
+    align-items: center;
+  }
 `
 
 
@@ -35,8 +45,10 @@ const DesignCard = ({title, description, imgUrl}: DesignCardProps) => {
     return (
         <CardWrapper>
             <Image src={imgUrl} alt={`${title}-page-screenshot`} width={327} height={320}/>
-            <ColorH3 className="card-title">{title}</ColorH3>
-            <GrayParagraph className="card-description">{description}</GrayParagraph>
+            <div className="card-wrapper">
+                <ColorH3 className="card-title">{title}</ColorH3>
+                <DarkGrayParagraph className="card-description">{description}</DarkGrayParagraph>
+            </div>
         </CardWrapper>
     )
 }

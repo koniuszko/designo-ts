@@ -22,6 +22,23 @@ const HeroWrapper = styled.section`
     background-repeat: no-repeat;
     background-position: 35% 15%;
   }
+
+  @media (min-width: 768px) {
+    width: 689px;
+    margin: 0 auto 120px;
+    border-radius: 15px;
+    overflow: hidden;
+
+    .about-image {
+      background-image: url('/assets/about/tablet/image-about-hero.jpg');
+    }
+
+    .about-main {
+      padding: 0 60px;
+      height: 312px;
+      background-position: 110% 25%;
+    }
+  }
 `
 
 const AboutWrapper = styled.section`
@@ -49,7 +66,26 @@ const AboutWrapper = styled.section`
     justify-content: center;
     align-items: center;
     gap: 24px;
+  }
 
+  @media (min-width: 768px) {
+    width: 689px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+
+    .world-class {
+      background-image: url('/assets/about/tablet/image-world-class-talent.jpg');
+    }
+
+    .real-deal {
+      background-image: url('/assets/about/tablet/image-real-deal.jpg');
+    }
+
+    .about-description {
+      padding: 68px 58px;
+      background-position: 80% 12%;
+    }
   }
 `
 

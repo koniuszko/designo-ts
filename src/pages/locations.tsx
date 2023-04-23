@@ -36,11 +36,12 @@ const locations = [{
 
 const LocationWrapper = styled.div`
   margin-top: 40px;
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
 `
 
 export default function Locations() {
-
-
     return (
         <MainLayout>
             {locations.map(

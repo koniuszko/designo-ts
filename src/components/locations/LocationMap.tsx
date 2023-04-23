@@ -20,6 +20,17 @@ const MapWrapper = styled.div`
     background-color: transparent;
   }
 
+  @media (min-width: 768px) {
+    width: 689px;
+    height: 326px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    
+    .leaflet-container {
+      height: 326px;
+    }
+  }
 `
 
 export default function LocationMap({lat, lng}: LatLngLiteral) {

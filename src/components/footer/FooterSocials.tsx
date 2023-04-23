@@ -3,10 +3,13 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const SocialsWrapper = styled.div`
-
   margin-top: 40px;
   display: flex;
   gap: 16px;
+
+  @media (min-width: 768px) {
+    align-self: flex-end;
+  }
 
 `
 

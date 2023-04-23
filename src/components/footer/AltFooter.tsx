@@ -11,6 +11,14 @@ export const FooterWrapper = styled.footer`
   align-items: center;
   position: relative;
 
+  @media (min-width: 768px) {
+    height: 337px;
+    padding: 80px 40px;
+
+    .nav-container {
+      margin: 0
+    }
+  }
 
 `
 
@@ -18,7 +26,6 @@ const AltFooter = () => {
     return (
         <FooterWrapper>
             <FooterContainer/>
-            <FooterSocials/>
         </FooterWrapper>
     )
 }

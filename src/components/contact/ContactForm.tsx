@@ -62,6 +62,26 @@ const FormSection = styled.section`
       }
     }
   }
+
+  @media (min-width: 768px) {
+    width: 689px;
+    height: 711px;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 72px 58px;
+
+    h2, p {
+      text-align: left;
+    }
+
+    .contact-form {
+      &-button {
+        margin-top: 0px;
+        align-self: flex-end;
+      }
+    }
+  }
+
 `
 
 const ErrorMsg = styled.p`
@@ -74,8 +94,6 @@ const ErrorMsg = styled.p`
   gap: 12px;
   position: relative;
   top: -44px;
-
-
 `
 
 const emailRegex = new RegExp(/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g)

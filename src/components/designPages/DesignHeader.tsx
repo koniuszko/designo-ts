@@ -15,6 +15,7 @@ export const HeaderWrapper = styled.header`
   justify-content: center;
   align-items: center;
   gap: 24px;
+
   @media (min-width: 768px) {
     width: 689px;
     height: 252px;
@@ -24,6 +25,14 @@ export const HeaderWrapper = styled.header`
     background-repeat: no-repeat;
     background-size: 110%;
     background-position: 80px 50%;
+  }
+  
+  @media (min-width: 1440px) {
+    width: 1112px;
+    margin: 24px auto 160px;
+    padding: 64px 190px;
+    background-size: 80%;
+    background-position: 250px 50%;
   }
 `
 const DesignHeader = ({pageTitle, pageDescription}: DesignHeaderProps) => {

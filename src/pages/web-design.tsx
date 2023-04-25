@@ -5,6 +5,13 @@ import DesignHeader from "@/components/designPages/DesignHeader";
 import DesignGallery from "@/components/designPages/DesignGallery";
 import SectionNav from "@/components/SectionNav";
 import {DataI, DesignPageProps} from "@/interfaces/app_interfaces";
+import styled from "styled-components";
+
+const NavWrapper = styled.div`
+  nav {
+    height: 308px;
+  }
+`
 
 export default function WebDesign({designData}: DesignPageProps) {
     return (
@@ -12,7 +19,9 @@ export default function WebDesign({designData}: DesignPageProps) {
             <DesignHeader pageTitle={designData?.pageTitle}
                           pageDescription={designData?.pageDescription}/>
             <DesignGallery designData={designData}/>
-            <SectionNav disabledLink={"web"}/>
+            <NavWrapper>
+                <SectionNav disabledLink={"web"}/>
+            </NavWrapper>
         </MainLayout>
     )
 }

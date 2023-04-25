@@ -24,6 +24,11 @@ const H1 = styled.h1`
     font-size: 40px;
     line-height: 40px;
   }
+  @media (min-width: 1440px) {
+    font-size: 48px;
+    line-height: 48px;
+    text-align: left;
+  }
 `
 export const WhiteH1 = styled(H1)`
   color: #FFF;

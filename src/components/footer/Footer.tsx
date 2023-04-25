@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import FooterSocials from "@/components/footer/FooterSocials";
 import FooterContact from "@/components/footer/FooterContact";
 import FooterContainer from "@/components/footer/FooterContainer";
 

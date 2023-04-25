@@ -15,6 +15,11 @@ export const NavbarWrapper = styled.nav`
     display: flex;
     align-items: center;
   }
+
+  @media (min-width: 1440px) {
+    width: 1112px;
+    margin: 0 auto;
+  }
 `
 const Navbar = () => {
     return (

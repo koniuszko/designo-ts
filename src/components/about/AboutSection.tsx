@@ -39,6 +39,33 @@ const HeroWrapper = styled.section`
       background-position: 110% 25%;
     }
   }
+
+  @media (min-width: 1440px) {
+    width: 1112px;
+    height: 480px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0;
+
+    .about-image {
+      width: 476px;
+      height: 480px;
+      background-image: url('/assets/about/desktop/image-about-hero.jpg');
+      background-repeat: no-repeat;
+    }
+
+    .about-main {
+      padding: 135px 90px;
+      width: 636px;
+      height: 480px;
+      background-position: 50% 10%;
+      align-items: flex-start;
+
+      h2, p {
+        text-align: left;
+      }
+    }
+  }
 `
 
 const AboutWrapper = styled.section`
@@ -86,6 +113,39 @@ const AboutWrapper = styled.section`
       padding: 68px 58px;
       background-position: 80% 12%;
     }
+  }
+
+  @media (min-width: 1440px) {
+    width: 1112px;
+    height: 640px;
+    display: flex;
+    flex-direction: row;
+
+
+    .world-class {
+      width: 476px;
+      height: 640px;
+      background-image: url('/assets/about/desktop/image-world-class-talent.jpg');
+    }
+
+    .real-deal {
+      order: 2;
+      width: 476px;
+      height: 640px;
+      background-image: url('/assets/about/desktop/image-real-deal.jpg');
+    }
+
+    .about-description {
+      width: 636px;
+      padding: 154px 96px;
+      background-position: 80% -30%;
+      align-items: flex-start;
+
+      h2, p {
+        text-align: left;
+      }
+    }
+
   }
 `
 

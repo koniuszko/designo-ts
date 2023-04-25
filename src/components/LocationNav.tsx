@@ -12,6 +12,13 @@ const NavWrapper = styled.nav`
   align-items: center;
   justify-content: center;
   gap: 24px;
+
+  @media (min-width: 1440px) {
+    width: 1112px;
+    margin: 160px auto;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 `
 
 const LocationWrapper = styled.div`

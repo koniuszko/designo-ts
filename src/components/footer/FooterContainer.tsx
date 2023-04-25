@@ -6,10 +6,6 @@ import FooterSocials from "@/components/footer/FooterSocials";
 export const ContainerWrapper = styled.div`
   text-align: center;
 
-  .nav-container {
-
-  }
-
   .address-socials {
     display: flex;
     flex-direction: column;
@@ -80,6 +76,14 @@ export const ContainerWrapper = styled.div`
       justify-content: space-between;
     }
   }
+
+  @media (min-width: 1440px) {
+    width: 1112px;
+
+    p {
+      text-align: left;
+    }
+  }
 `
 
 export default function FooterContainer() {
@@ -115,7 +119,6 @@ export default function FooterContainer() {
                 </div>
                 <FooterSocials/>
             </div>
-
         </ContainerWrapper>
     )
 }

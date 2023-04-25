@@ -38,16 +38,42 @@ export const ContactWrapper = styled.div`
       margin: 0 100px;
     }
   }
+  @media (min-width: 1440px) {
+    width: 1112px;
+    height: 292px;
+    background-size: 70%;
+    background-position: 350px 50%;
+    transform: translateY(-220px);
+    gap: 24px;
+    padding: 72px 94px;
+    flex-direction: row;
+
+
+    .footer-contact-title {
+      width: 350px;
+      text-align: left;
+      margin: 0;
+
+    }
+
+    .footer-contact-description {
+      width: 456px;
+      margin: 24px 0 0;
+      text-align: left;
+    }
+  }
 `
 
 export default function FooterContact() {
     return (
         <ContactWrapper>
-            <WhiteH1 className="footer-contact-title">Let’s talk about your project</WhiteH1>
-            <WhiteParagraph className="footer-contact-description">
-                Ready to take it to the next level? Contact us today and find out how our expertise can
-                help your business grow.
-            </WhiteParagraph>
+            <div className="contact-wrapper">
+                <WhiteH1 className="footer-contact-title">Let’s talk about your project</WhiteH1>
+                <WhiteParagraph className="footer-contact-description">
+                    Ready to take it to the next level? Contact us today and find out how our expertise can
+                    help your business grow.
+                </WhiteParagraph>
+            </div>
             <Link href={'/contact'}>
                 <WhiteButton>
                     get in touch

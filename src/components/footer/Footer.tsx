@@ -24,6 +24,11 @@ export const FooterWrapper = styled.footer`
       margin-top: 0;
     }
   }
+
+  @media (min-width: 1440px) {
+    margin-top: 380px;
+    height: 394px;
+  }
 `
 
 const Footer = () => {

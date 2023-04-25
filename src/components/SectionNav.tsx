@@ -68,6 +68,42 @@ const NavWrapper = styled.nav`
       rgba(0, 0, 0, 0.45)), url('/assets/home/tablet/image-graphic-design.jpg');
     }
   }
+
+  @media (min-width: 1440px) {
+    margin: 160px auto;
+    width: 1112px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 24px 30px;
+
+
+    height: 640px;
+    
+
+    .link-container {
+      width: 541px;
+      height: 308px;
+    }
+
+    .web-design {
+      height: 640px;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.45)), url('/assets/home/desktop/image-web-design-large.jpg');
+    }
+
+    .app-design {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.45)), url('/assets/home/desktop/image-app-design.jpg');
+    }
+
+    .graphic-design {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.45)), url('/assets/home/desktop/image-graphic-design.jpg');
+    }
+  }
 `
 
 const SectionNav = ({disabledLink}: NavProps) => {

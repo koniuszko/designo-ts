@@ -8,6 +8,11 @@ export const MainWrapper = styled.main`
   flex-direction: column;
   align-items: center;
   gap: 80px;
+  @media (min-width: 1440px) {
+    width: 1100px;
+    margin: 0 auto;
+    flex-direction: row;
+  }
 `
 
 export const CardWrapper = styled.div`
@@ -46,6 +51,22 @@ export const CardWrapper = styled.div`
       text-align: left;
     }
   }
+  @media (min-width: 1440px) {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .card-title {
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .card-description {
+      text-align: center;
+    }
+  }
+
 `
 
 const Card = ({title, description, img}: CardProps) => {

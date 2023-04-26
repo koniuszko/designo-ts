@@ -1,6 +1,7 @@
 import {ReactNode} from "react";
 
 export interface DataI {
+    locations?: object;
     home_cards?: object,
     webs?: object,
     apps?: object,
@@ -67,4 +68,19 @@ export interface FormValues {
 
 export interface Msg {
     msg: string
+}
+
+export interface LocationsProps {
+    locationsData: LocationCardProps[]
+}
+
+export interface LocationCardProps {
+    country: string,
+    officeName: string,
+    street: string,
+    city: string,
+    lat: number,
+    lng: number,
+    phone: string,
+    email: string
 }

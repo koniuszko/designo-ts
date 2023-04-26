@@ -2,35 +2,8 @@ import MainLayout from "@/layouts/MainLayout";
 import LocationMap from "@/components/locations/LocationMap";
 import styled from "styled-components";
 import LocationCard from "@/components/locations/LocationCard";
-
-const locations = [{
-    country: "Canada",
-    officeName: "Designo Central Office",
-    street: "3886 Wellington Street",
-    city: "Toronto, Ontario M9C 3J5",
-    lat: 43.6441948470555,
-    lng: -79.3945447664012,
-    phone: "+1 253-863-8967",
-    email: "contact@designo.co"
-}, {
-    country: "Australia",
-    officeName: "Designo AU Office",
-    street: "19 Balonne Street",
-    city: "New South Wales 2443",
-    lat: -30.329194769876942,
-    lng: 149.78824526441792,
-    phone: "(02) 6720 9092",
-    email: "contact@designo.au"
-}, {
-    country: "United Kingdom",
-    officeName: "Designo UK Office",
-    street: "13  Colorado Way",
-    city: "Rhyd-y-fro SA8 9GA",
-    lat: 51.73105267550053,
-    lng: -3.8624393516072777,
-    phone: "078 3115 1400",
-    email: "contact@designo.uk"
-}]
+import {GetStaticProps} from "next";
+import {DataI, LocationCardProps, LocationsProps} from "@/interfaces/app_interfaces";
 
 const SectionWrapper = styled.section`
   .location:nth-child(2) {
@@ -53,12 +26,12 @@ const LocationWrapper = styled.div`
   }
 `
 
-export default function Locations() {
+export default function Locations({locationsData}: LocationsProps) {
     return (
         <MainLayout>
             <SectionWrapper>
-                {locations.map(
-                    location => {
+                {locationsData.map(
+                    (location: LocationCardProps) => {
                         return (
                             <LocationWrapper className='location' key={location.country}>
                                 <LocationMap lat={location.lat} lng={location.lng}/>
@@ -77,3 +50,9 @@ export default function Locations() {
     )
 }
 
+export const getStaticProps: GetStaticProps = async () => {
+    const data: DataI = await import('@/data/data.json')
+    return {
+        props: {locationsData: data.locations},
+    }
+}

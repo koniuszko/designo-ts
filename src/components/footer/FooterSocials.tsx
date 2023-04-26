@@ -11,6 +11,11 @@ export const SocialsWrapper = styled.div`
     align-self: flex-end;
   }
 
+  @media (min-width: 1440px) {
+    img:hover {
+      opacity: 0.7;
+    }
+  }
 `
 
 export default function FooterSocials() {

@@ -132,5 +132,9 @@ export const DesktopNavLink = styled(Link)`
   font-weight: 400;
   line-height: 14px;
   letter-spacing: 2px;
+
+  &:hover {
+    text-decoration: underline;
+  }
 `
 

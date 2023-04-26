@@ -24,16 +24,31 @@ const NavWrapper = styled.nav`
   .web-design {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65),
     rgba(0, 0, 0, 0.45)), url('/assets/home/mobile/image-web-design.jpg');
+
+    &:hover {
+      background-image: linear-gradient(rgba(255, 173, 155, 0.65),
+      rgba(255, 173, 155, 0.45)), url('/assets/home/mobile/image-web-design.jpg');
+    }
   }
 
   .app-design {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65),
     rgba(0, 0, 0, 0.45)), url('/assets/home/mobile/image-app-design.jpg');
+
+    &:hover {
+      background-image: linear-gradient(rgba(255, 173, 155, 0.65),
+      rgba(255, 173, 155, 0.45)), url('/assets/home/mobile/image-app-design.jpg');
+    }
   }
 
   .graphic-design {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65),
     rgba(0, 0, 0, 0.45)), url('/assets/home/mobile/image-graphic-design.jpg');
+
+    &:hover {
+      background-image: linear-gradient(rgba(255, 173, 155, 0.65),
+      rgba(255, 173, 155, 0.45)), url('/assets/home/mobile/image-graphic-design.jpg');
+    }
   }
 
   .arrow-icon {
@@ -56,16 +71,31 @@ const NavWrapper = styled.nav`
     .web-design {
       background-image: linear-gradient(rgba(0, 0, 0, 0.65),
       rgba(0, 0, 0, 0.45)), url('/assets/home/tablet/image-web-design.jpg');
+
+      &:hover {
+        background-image: linear-gradient(rgba(255, 173, 155, 0.65),
+        rgba(255, 173, 155, 0.45)), url('/assets/home/tablet/image-web-design.jpg');
+      }
     }
 
     .app-design {
       background-image: linear-gradient(rgba(0, 0, 0, 0.65),
       rgba(0, 0, 0, 0.45)), url('/assets/home/tablet/image-app-design.jpg');
+
+      &:hover {
+        background-image: linear-gradient(rgba(255, 173, 155, 0.65),
+        rgba(255, 173, 155, 0.45)), url('/assets/home/tablet/image-app-design.jpg');
+      }
     }
 
     .graphic-design {
       background-image: linear-gradient(rgba(0, 0, 0, 0.65),
       rgba(0, 0, 0, 0.45)), url('/assets/home/tablet/image-graphic-design.jpg');
+
+      &:hover {
+        background-image: linear-gradient(rgba(255, 173, 155, 0.65),
+        rgba(255, 173, 155, 0.45)), url('/assets/home/tablet/image-graphic-design.jpg');
+      }
     }
   }
 
@@ -81,7 +111,7 @@ const NavWrapper = styled.nav`
 
 
     height: 640px;
-    
+
 
     .link-container {
       width: 541px;
@@ -92,16 +122,31 @@ const NavWrapper = styled.nav`
       height: 640px;
       background-image: linear-gradient(rgba(0, 0, 0, 0.65),
       rgba(0, 0, 0, 0.45)), url('/assets/home/desktop/image-web-design-large.jpg');
+      
+      &:hover {
+        background-image: linear-gradient(rgba(255, 173, 155, 0.65),
+        rgba(255, 173, 155, 0.45)), url('/assets/home/desktop/image-web-design-large.jpg');
+      }
     }
 
     .app-design {
       background-image: linear-gradient(rgba(0, 0, 0, 0.65),
       rgba(0, 0, 0, 0.45)), url('/assets/home/desktop/image-app-design.jpg');
+
+      &:hover {
+        background-image: linear-gradient(rgba(255, 173, 155, 0.65),
+        rgba(255, 173, 155, 0.45)), url('/assets/home/desktop/image-app-design.jpg');
+      }
     }
 
     .graphic-design {
       background-image: linear-gradient(rgba(0, 0, 0, 0.65),
       rgba(0, 0, 0, 0.45)), url('/assets/home/desktop/image-graphic-design.jpg');
+
+      &:hover {
+        background-image: linear-gradient(rgba(255, 173, 155, 0.65),
+        rgba(255, 173, 155, 0.45)), url('/assets/home/desktop/image-graphic-design.jpg');
+      }
     }
   }
 `

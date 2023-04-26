@@ -17,6 +17,11 @@ const NavWrapper = styled.div`
     height: 308px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65),
     rgba(0, 0, 0, 0.45)), url('/assets/home/desktop/image-web-design-small.jpg');
+
+    &:hover {
+      background-image: linear-gradient(rgba(255, 173, 155, 0.65),
+      rgba(255, 173, 155, 0.45)), url('/assets/home/desktop/image-web-design-small.jpg');
+    }
   }
 `
 export default function GraphicDesign({designData}: DesignPageProps) {

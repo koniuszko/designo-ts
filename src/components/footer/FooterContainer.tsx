@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {LightGrayParagraph, NavLink} from "@/style/global";
 import Image from "next/image";
 import FooterSocials from "@/components/footer/FooterSocials";
+import Link from "next/link";
 
 export const ContainerWrapper = styled.div`
   text-align: center;
@@ -83,6 +84,10 @@ export const ContainerWrapper = styled.div`
     p {
       text-align: left;
     }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
   }
 `
 
@@ -90,8 +95,11 @@ export default function FooterContainer() {
     return (
         <ContainerWrapper>
             <div className="nav-container">
-                <Image className="footer-logo" src={'/assets/shared/desktop/logo-light.png'} alt={'logo'} width={202}
-                       height={27}/>
+                <Link href={'/'}>
+                    <Image className="footer-logo" src={'/assets/shared/desktop/logo-light.png'} alt={'logo'}
+                           width={202}
+                           height={27}/>
+                </Link>
                 <nav className="footer-nav">
                     <ul className="footer-nav-list">
                         <li className="footer-nav-list-item">

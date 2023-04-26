@@ -82,6 +82,24 @@ const FormSection = styled.section`
     }
   }
 
+  @media (min-width: 1440px) {
+    width: 1112px;
+    height: 480px;
+    padding: 55px 95px;
+    display: flex;
+    align-items: center;
+
+
+    .contact-section {
+      width: 630px;
+      padding: 0 150px 0 0;
+    }
+
+    .contact-form {
+      margin-top: 0;
+      width: 370px;
+    }
+  }
 `
 
 const ErrorMsg = styled.p`

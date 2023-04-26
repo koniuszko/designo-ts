@@ -8,8 +8,10 @@ import {DataI, DesignPageProps} from "@/interfaces/app_interfaces";
 import styled from "styled-components";
 
 const NavWrapper = styled.div`
-  nav {
-    height: 308px;
+  @media (min-width: 1440px) {
+    nav {
+      height: 308px;
+    }
   }
 `
 

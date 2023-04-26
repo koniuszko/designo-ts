@@ -108,8 +108,6 @@ const NavWrapper = styled.nav`
     align-items: center;
     justify-content: center;
     gap: 24px 30px;
-
-
     height: 640px;
 
 
@@ -122,7 +120,7 @@ const NavWrapper = styled.nav`
       height: 640px;
       background-image: linear-gradient(rgba(0, 0, 0, 0.65),
       rgba(0, 0, 0, 0.45)), url('/assets/home/desktop/image-web-design-large.jpg');
-      
+
       &:hover {
         background-image: linear-gradient(rgba(255, 173, 155, 0.65),
         rgba(255, 173, 155, 0.45)), url('/assets/home/desktop/image-web-design-large.jpg');

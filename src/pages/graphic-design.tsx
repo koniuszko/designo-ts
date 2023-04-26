@@ -8,19 +8,20 @@ import {DataI, DesignPageProps} from "@/interfaces/app_interfaces";
 import styled from "styled-components";
 
 const NavWrapper = styled.div`
+  @media (min-width: 1440px) {
+    nav {
+      height: 308px;
+    }
 
-  nav {
-    height: 308px;
-  }
+    .web-design {
+      height: 308px;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.45)), url('/assets/home/desktop/image-web-design-small.jpg');
 
-  .web-design {
-    height: 308px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65),
-    rgba(0, 0, 0, 0.45)), url('/assets/home/desktop/image-web-design-small.jpg');
-
-    &:hover {
-      background-image: linear-gradient(rgba(255, 173, 155, 0.65),
-      rgba(255, 173, 155, 0.45)), url('/assets/home/desktop/image-web-design-small.jpg');
+      &:hover {
+        background-image: linear-gradient(rgba(255, 173, 155, 0.65),
+        rgba(255, 173, 155, 0.45)), url('/assets/home/desktop/image-web-design-small.jpg');
+      }
     }
   }
 `

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import {UilBars} from '@iconscout/react-unicons'
 // @ts-ignore
 import {UilTimes} from '@iconscout/react-unicons'
-import {useEffect, useState} from "react";
+import {useEffect, useLayoutEffect, useState} from "react";
 
 import {NavLink} from "@/style/global";
 
@@ -49,16 +49,9 @@ export const MenuModal = () => {
 const MobileMenu = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    // useEffect(() => {
-    //     return () => {
-    //         if (!isMenuOpen) {
-    //             document.body.style.overflow = 'hidden'
-    //         }
-    //         if (isMenuOpen) {
-    //             document.body.style.overflow = 'initial'
-    //         }
-    //     };
-    // }, [isMenuOpen]);
+    useEffect(() => {
+        document.body.style.overflow = isMenuOpen ? 'hidden' : 'unset'
+    }, [isMenuOpen]);
 
     return (
         <div>

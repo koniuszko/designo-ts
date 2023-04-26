@@ -40,6 +40,11 @@ const CardWrapper = styled.div`
       text-align: left;
     }
   }
+
+  @media (min-width: 1440px) {
+    margin: 0;
+    width: 730px;
+  }
 `
 
 export default function LocationCard({country, officeName, street, city, phone, email}: LocationsComponentProps) {

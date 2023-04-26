@@ -26,10 +26,14 @@ const MapWrapper = styled.div`
     margin: 0 auto;
     border-radius: 15px;
     overflow: hidden;
-    
+
     .leaflet-container {
       height: 326px;
     }
+  }
+
+  @media (min-width: 1440px) {
+    width: 350px;
   }
 `
 

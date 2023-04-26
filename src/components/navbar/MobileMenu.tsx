@@ -1,11 +1,11 @@
 import styled from 'styled-components'
-// @ts-ignore
-import {UilBars} from '@iconscout/react-unicons'
-// @ts-ignore
-import {UilTimes} from '@iconscout/react-unicons'
 import {useEffect, useState} from "react";
 
 import {NavLink} from "@/style/global";
+import Image from "next/image";
+
+import barsIcon from "../../../public/assets/icons/bars.svg"
+import closeIcon from "../../../public/assets/icons/times.svg"
 
 export const ModalWrapper = styled.div`
   position: absolute;
@@ -55,9 +55,8 @@ const MobileMenu = () => {
 
     return (
         <div>
-            <div onClick={() => setIsMenuOpen(!isMenuOpen)} className="menu-icon">
-                {!isMenuOpen ? <UilBars size={27}/> : <UilTimes size={27}/>}
-            </div>
+            <Image onClick={() => setIsMenuOpen(!isMenuOpen)} src={!isMenuOpen ? barsIcon : closeIcon}
+                   alt={'menu-icon'} width={27} height={27}/>
             {isMenuOpen && <MenuModal/>}
         </div>
     )

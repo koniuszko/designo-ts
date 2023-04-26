@@ -28,7 +28,7 @@ export default function WebDesign({designData}: DesignPageProps) {
     )
 }
 
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getStaticProps: GetStaticProps = async () => {
     const data: DataI = await import('@/data/data.json')
     return {
         props: {designData: data.webs},

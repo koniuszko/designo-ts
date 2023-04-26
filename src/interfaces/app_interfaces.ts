@@ -1,10 +1,10 @@
 import {ReactNode} from "react";
 
 export interface DataI {
-    home_cards?: {},
-    webs?: {},
-    apps?: {},
-    graphics?: {},
+    home_cards?: object,
+    webs?: object,
+    apps?: object,
+    graphics?: object,
 }
 
 export interface NavProps {

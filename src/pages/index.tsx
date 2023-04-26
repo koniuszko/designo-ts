@@ -15,7 +15,7 @@ export default function Home({home_cards}: CardsProps) {
     )
 }
 
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getStaticProps: GetStaticProps = async () => {
     const {home_cards} = await import('@/data/data.json')
     return {
         props: {home_cards},

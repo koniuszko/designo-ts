@@ -2,9 +2,25 @@ import styled from "styled-components";
 import {MapContainer, TileLayer, Marker, Popup} from 'react-leaflet';
 import {DivIcon, LatLngLiteral} from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import dynamic from "next/dynamic";
+
+const LeafletMapContainer = dynamic(() => import('react-leaflet').then(module => module.MapContainer), {
+    ssr: false
+});
+
+const LeafletTileLayer = dynamic(() => import('react-leaflet').then(module => module.TileLayer), {
+    ssr: false
+});
+
+const LeafletMarker = dynamic(() => import('react-leaflet').then(module => module.Marker), {
+    ssr: false
+});
+
+const LeafletPopup = dynamic(() => import('react-leaflet').then(module => module.Popup), {
+    ssr: false
+});
 
 const MapWrapper = styled.div`
-
   .leaflet-container {
     height: 320px;
   }
@@ -37,6 +53,7 @@ const MapWrapper = styled.div`
 
 export default function LocationMap({lat, lng}: LatLngLiteral) {
 
+
     const customIcon: DivIcon = new DivIcon({
         iconSize: [25, 25],
         iconAnchor: [0, 0],
@@ -44,20 +61,20 @@ export default function LocationMap({lat, lng}: LatLngLiteral) {
     })
     return (
         <MapWrapper id="map">
-            <MapContainer center={[lat, lng]} zoom={12} scrollWheelZoom={true}>
-                <TileLayer
+            <LeafletMapContainer center={[lat, lng]} zoom={12} scrollWheelZoom={true}>
+                <LeafletTileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
 
-                <Marker position={[lat, lng]}
-                        icon={customIcon}
+                <LeafletMarker position={[lat, lng]}
+                               icon={customIcon}
                 >
-                    <Popup>
+                    <LeafletPopup>
                         Our Location
-                    </Popup>
-                </Marker>
-            </MapContainer>
+                    </LeafletPopup>
+                </LeafletMarker>
+            </LeafletMapContainer>
         </MapWrapper>
     )
 }

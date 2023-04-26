@@ -1,5 +1,4 @@
 import {ReactNode} from "react";
-import {string} from "prop-types";
 
 export interface DataI {
     home_cards?: {},

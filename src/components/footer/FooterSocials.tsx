@@ -21,19 +21,19 @@ export const SocialsWrapper = styled.div`
 export default function FooterSocials() {
     return (
         <SocialsWrapper>
-            <Link href="http://www.facebook.com">
+            <Link href="https:///www.facebook.com">
                 <Image src='/assets/icons/icon-facebook.svg' alt='facebook-icon' width={24} height={24}/>
             </Link>
-            <Link href="http://www.youtube.com">
+            <Link href="https:///www.youtube.com">
                 <Image src='/assets/icons/icon-youtube.svg' alt='facebook-icon' width={24} height={24}/>
             </Link>
-            <Link href="http://www.twitter.com">
+            <Link href="https:///www.twitter.com">
                 <Image src='/assets/icons/icon-twitter.svg' alt='facebook-icon' width={24} height={24}/>
             </Link>
-            <Link href="http://www.pinterest.com">
+            <Link href="https:///www.pinterest.com">
                 <Image src='/assets/icons/icon-pinterest.svg' alt='facebook-icon' width={24} height={24}/>
             </Link>
-            <Link href="http://www.instagram.com">
+            <Link href="https:///www.instagram.com">
                 <Image src='/assets/icons/icon-instagram.svg' alt='facebook-icon' width={24} height={24}/>
             </Link>
         </SocialsWrapper>

@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import FooterSocials from "@/components/footer/FooterSocials";
 import FooterContainer from "@/components/footer/FooterContainer";
 
 export const FooterWrapper = styled.footer`

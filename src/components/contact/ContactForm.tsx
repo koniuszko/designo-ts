@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {WhiteButton, WhiteH2, WhiteParagraph} from "@/style/global";
-import {ErrorMessage, Field, Form, Formik, FormikHelpers, FormikState} from "formik";
+import {ErrorMessage, Field, Form, Formik, FormikHelpers} from "formik";
 import {FormValues, Msg} from "@/interfaces/app_interfaces";
 import * as Yup from 'yup'
 import Image from "next/image";

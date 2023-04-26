@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import {UilBars} from '@iconscout/react-unicons'
 // @ts-ignore
 import {UilTimes} from '@iconscout/react-unicons'
-import {useEffect, useLayoutEffect, useState} from "react";
+import {useEffect, useState} from "react";
 
 import {NavLink} from "@/style/global";
 

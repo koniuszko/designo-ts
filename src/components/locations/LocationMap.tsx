@@ -1,9 +1,7 @@
 import styled from "styled-components";
 import {MapContainer, TileLayer, Marker, Popup} from 'react-leaflet';
-import {DivIcon, Icon, LatLngLiteral} from 'leaflet';
+import {DivIcon, LatLngLiteral} from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-
-import pinIcon from '../../../public/assets/icons/location-point.svg'
 
 const MapWrapper = styled.div`
 

@@ -3,7 +3,6 @@ import styled from "styled-components";
 import LocationCard from "@/components/locations/LocationCard";
 import dynamic from "next/dynamic";
 
-
 const locations = [{
     country: "Canada",
     officeName: "Designo Central Office",

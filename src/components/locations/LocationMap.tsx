@@ -2,23 +2,7 @@ import styled from "styled-components";
 import {MapContainer, TileLayer, Marker, Popup} from 'react-leaflet';
 import {DivIcon, LatLngLiteral} from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import dynamic from "next/dynamic";
 
-const LeafletMapContainer = dynamic(() => import('react-leaflet').then(module => module.MapContainer), {
-    ssr: false
-});
-
-const LeafletTileLayer = dynamic(() => import('react-leaflet').then(module => module.TileLayer), {
-    ssr: false
-});
-
-const LeafletMarker = dynamic(() => import('react-leaflet').then(module => module.Marker), {
-    ssr: false
-});
-
-const LeafletPopup = dynamic(() => import('react-leaflet').then(module => module.Popup), {
-    ssr: false
-});
 
 const MapWrapper = styled.div`
   .leaflet-container {
@@ -61,20 +45,20 @@ export default function LocationMap({lat, lng}: LatLngLiteral) {
     })
     return (
         <MapWrapper id="map">
-            <LeafletMapContainer center={[lat, lng]} zoom={12} scrollWheelZoom={true}>
-                <LeafletTileLayer
+            <MapContainer center={[lat, lng]} zoom={12} scrollWheelZoom={true}>
+                <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
 
-                <LeafletMarker position={[lat, lng]}
-                               icon={customIcon}
+                <Marker position={[lat, lng]}
+                        icon={customIcon}
                 >
-                    <LeafletPopup>
+                    <Popup>
                         Our Location
-                    </LeafletPopup>
-                </LeafletMarker>
-            </LeafletMapContainer>
+                    </Popup>
+                </Marker>
+            </MapContainer>
         </MapWrapper>
     )
 }

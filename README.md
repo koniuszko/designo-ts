@@ -1,38 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Mentor Challenge - Designo
 
-## Getting Started
+This repository contains my solution to the Designo challenge from Frontend Mentor. The challenge involved building a
+landing page for a design agency called Designo. I used Next.js and TypeScript along with Styled Components to complete
+this project as a way to learn and practice these technologies.
 
-First, run the development server:
+Link to the challenge: [Designo challenge](https://www.frontendmentor.io/challenges/designo-multipage-website-G48K6rfUT)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Responsive design that adapts to different screen sizes and devices (375px / 768px / 1440px).
+- Interactive elements to enhance user experience.
+- Usage of Next.js for server-side rendering and optimized performance.
+- Implementation of TypeScript for static typing and improved code quality.
+- Utilization of Styled Components for styling the components and layout of the landing page.
+- Email.js integration for handling contact form submissions and sending emails.
+- Integration of React Leaflet for interactive and customizable maps.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Demo
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+You can see a live demo of the project [Here](https://designo-ts.vercel.app)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Installation and Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To run this project locally, follow these steps:
 
-## Learn More
+1. Clone the repository: `git clone https://github.com/koniuszko/designo-ts.git`
+2. Navigate to the project directory: `cd`
+3. Install the dependencies: `npm install`
+4. Start the development server: `npm run dev`
+5. Open your browser and visit `http://localhost:3000`
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Next.js: A React framework for server-side rendering and optimized performance.
+- TypeScript: A statically-typed superset of JavaScript that helps improve code quality and maintainability.
+- Styled Components: A CSS-in-JS library for styling React components.
+- Email.js: A service for sending emails from JavaScript.
+- React Leaflet: A React library for integrating Leaflet maps into the application.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
+The project structure follows the conventions of a Next.js application. Here's an overview of the main directories and
+files:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `pages/`: Contains the Next.js pages for each route, such as the landing page and subpages.
+- `components/`: Contains reusable React components used throughout the application.
+- `styles/`: Contains the styled components for styling the components.
+- `public/`: Contains static assets like images and fonts.
+- `utils/`: Contains utility functions and helper modules.
+- `data/`: Contains data used to populate the components.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+
+The code in this project is licensed under the [MIT License](LICENSE).
+
+Feel free to use this project as a reference or starting point for your own projects. I hope it helps you in learning
+and exploring Next.js, TypeScript, and Styled Components!
